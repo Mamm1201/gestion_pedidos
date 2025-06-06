@@ -1,0 +1,53 @@
+# ---------------------------------------
+# Archivos compilados de Python
+# ---------------------------------------
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.pyo
+
+# ---------------------------------------
+# Entornos virtuales (virtualenv, venv, etc.)
+# ---------------------------------------
+env/
+venv/
+ENV/
+.venv/
+
+# ---------------------------------------
+# Archivos de configuración de entorno y variables sensibles
+# ---------------------------------------
+*.env
+.env.*
+
+# ---------------------------------------
+# Archivos de logs generados por la aplicación
+# ---------------------------------------
+*.log
+
+# ---------------------------------------
+# Cachés y reportes de testing (pytest, coverage)
+# ---------------------------------------
+.cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# ---------------------------------------
+# Configuración específica de VS Code
+# ---------------------------------------
+.vscode/
+
+# ---------------------------------------
+# Backups y dumps de MongoDB (si los haces)
+# ---------------------------------------
+dump/
+*.bson
+*.json
+
+# ---------------------------------------
+# Archivos generados por sistemas operativos
+# ---------------------------------------
+.DS_Store
+Thumbs.db
