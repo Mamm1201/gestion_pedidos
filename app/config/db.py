@@ -3,6 +3,15 @@
 # --------------------------------------
 from pymongo import MongoClient
 
-conn = (
-    MongoClient()
-)  # Con la variable conn estoy conectandome a una base de datos de Mongo
+# Conexión a MongoDB (se conecta a localhost:27017 por defecto)
+conn = MongoClient(
+    "mongodb://localhost:27017/",
+    serverSelectionTimeoutMS=5000
+)
+
+# Conexión a la base de datos
+db = conn["pedidosdb"]
+
+# Definición de colecciones
+usuarios_collection = db["usuarios"]
+pedidos_collection = db["pedidos"]  # Colección para pedidos
